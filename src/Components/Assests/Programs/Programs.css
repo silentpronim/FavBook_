@@ -1,0 +1,61 @@
+.programs{
+    margin: 60px auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.program img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.program{
+    flex-basis: 31%;
+    position: relative;
+}
+.background2{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(234, 181, 6, 0.667)),url('../../Pictures/Books.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.41);
+    display: flex; 
+    flex-direction: column;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.5s;
+    
+}
+.caption img{
+    width: 30px;
+    display: flex;
+    margin-bottom: 10px;
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 3px;
+   
+}
+.caption p{
+    margin-left: 30px;
+    margin-top: 3px;
+}
+.program:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}
